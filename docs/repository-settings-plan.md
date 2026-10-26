@@ -165,6 +165,9 @@ Commit sign-off policy (General → *Commits*): **off for now** — DCO sign-off
 | **Type** | `bug`, `enhancement`, `task`, `epic`, `documentation`, `question` | What kind of work — Projects swimlanes/groups by type |
 | **Priority** | `priority: urgent`, `priority: high`, `priority: medium`, `priority: low` | Ranking within Project views |
 | **Process** | `needs-triage`, `needs-info`, `good first issue`, `help wanted` | Triage queues — Projects kanban columns |
+| **Triage outcomes** (GitHub standard, kept) | `duplicate`, `invalid`, `wontfix`, `accessibility` | Final states assigned by maintainers — Projects 'closed/rejected' views |
+
+**18 labels total** (created/normalized via API 10-27).
 
 **No status labels by design** (P1): workflow state (todo / in-progress / done) belongs to the Project's status field, not labels — labels stay as stable filters. Issue forms pre-apply the Type label (bugs also get `needs-triage`). Add `area: *` component labels once the project structure is defined.
 
