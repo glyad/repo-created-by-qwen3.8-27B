@@ -1,0 +1,34 @@
+name: 🎯 Epic
+about: A large body of work spanning multiple stories/tasks. Use as the source of truth for a major initiative.
+title: "epic: "
+labels: [epic]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What outcome does this epic deliver? (one sentence)
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Value / why now
+      description: Business or user value, and why this is being prioritized now.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope — planned stories
+      description: List the child stories/tasks (link issues as they are created).
+  - type: textarea
+    id: out
+    attributes:
+      label: Out of scope
+      description: What this epic explicitly does **not** include.
+  - type: textarea
+    id: release
+    attributes:
+      label: Target release
+      description: Planned release or milestone.
