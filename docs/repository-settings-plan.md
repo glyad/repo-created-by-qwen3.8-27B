@@ -27,7 +27,7 @@
 | 2 | Access: code review limits (3.3) | ⏳ approved 10-27 — **UI-only** (no REST): Settings → Access → Moderation options → *Code review limits* → check *Limit to users explicitly granted read or higher access* → Save — **awaiting your click** |
 | 3 | Security & quality: Advanced Security (3.4) | ⬜ queued |
 | 4 | Actions settings (3.5) | ⬜ queued |
-| 5 | Config files: LICENSE, CODEOWNERS, SECURITY.md, templates, dependabot.yml, CI + CodeQL (3.6) | ⬜ queued |
+| 5 | Config files: LICENSE, CODEOWNERS, SECURITY.md, templates, dependabot.yml, CI + CodeQL (3.6) | ⬜ queued — issue/PR templates + label set pre-applied 10-27; LICENSE, CODEOWNERS, SECURITY.md, dependabot.yml, CI + CodeQL remain |
 | 6 | Ruleset `baseline-gitflow` (3.2): Disabled dry-run → Active + status checks (§4 Phase 2) | ⬜ queued |
 | 7 | Verification suite (§5) + governance cadence (§6) | ⬜ queued |
 
@@ -151,10 +151,22 @@ These live in the repo, not the Settings UI, but are part of the configuration t
 .github/workflows/codeql.yml       ← language starter (G 5.3)
 LICENSE                            ← chosen in G 1.4 (add via Settings → *Licensing* or file)
 SECURITY.md                        ← private advisory channel + SLA (G 3.7)
-CONTRIBUTING.md, CODE_OF_CONDUCT.md, issue/PR templates (G 3.3–3.6)
+CONTRIBUTING.md, CODE_OF_CONDUCT.md (G 3.3–3.4)
+.github/ISSUE_TEMPLATE/{bug,feature-request,task,epic}.yml + config.yml   ← agile set; blank issues off, Q&A → Discussions (applied 10-27)
+.github/PULL_REQUEST_TEMPLATE.md   ← agile DoD template (applied 10-27)
 ```
 
 Commit sign-off policy (General → *Commits*): **off for now** — DCO sign-off makes sense once external contributors are real (P1). Revisit at §8 trigger.
+
+### 3.7 Labels — agile taxonomy, GitHub Projects-ready *(applied 2026-10-27 via API)*
+
+| Namespace | Labels | Purpose (GitHub Projects) |
+|---|---|---|
+| **Type** | `bug`, `enhancement`, `task`, `epic`, `documentation`, `question` | What kind of work — Projects swimlanes/groups by type |
+| **Priority** | `priority: urgent`, `priority: high`, `priority: medium`, `priority: low` | Ranking within Project views |
+| **Process** | `needs-triage`, `needs-info`, `good first issue`, `help wanted` | Triage queues — Projects kanban columns |
+
+**No status labels by design** (P1): workflow state (todo / in-progress / done) belongs to the Project's status field, not labels — labels stay as stable filters. Issue forms pre-apply the Type label (bugs also get `needs-triage`). Add `area: *` component labels once the project structure is defined.
 
 ## 4. Rollout plan (evaluate → enforce, per P2)
 
