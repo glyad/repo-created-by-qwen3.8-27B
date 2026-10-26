@@ -24,7 +24,7 @@
 | Step | Scope (§3.x) | Status |
 |---|---|---|
 | 1 | General + Git Flow foundation (3.1) | ✅ 10-26: discussions on, wiki off, `develop` created; merge methods → **merge-only** 10-27. ⚠ Manual UI pending: push policy = 5; auto-delete head branches |
-| 2 | Access: code review limits (3.3) | ✅ approved 10-27 — **UI-only** (no REST endpoint): Settings → Access → Moderation options → *Code review limits* → check *Limit to users explicitly granted read or higher access* → Save |
+| 2 | Access: code review limits (3.3) | ⏳ approved 10-27 — **UI-only** (no REST): Settings → Access → Moderation options → *Code review limits* → check *Limit to users explicitly granted read or higher access* → Save — **awaiting your click** |
 | 3 | Security & quality: Advanced Security (3.4) | ⬜ queued |
 | 4 | Actions settings (3.5) | ⬜ queued |
 | 5 | Config files: LICENSE, CODEOWNERS, SECURITY.md, templates, dependabot.yml, CI + CodeQL (3.6) | ⬜ queued |
