@@ -1,0 +1,81 @@
+name: 🐞 Bug report
+about: Report a defect or regression so it can be triaged and scheduled.
+title: "bug: "
+labels: [bug, needs-triage]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One or two sentences: what is broken?
+      placeholder: e.g. "Export produces an empty file"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How much does this impact users?
+      options:
+        - Blocker (system unusable / data at risk)
+        - Critical (core feature broken, no workaround)
+        - Major (feature impaired, workaround exists)
+        - Minor (annoyance / cosmetic)
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Your urgency estimate — maintainers may re-prioritize during triage.
+      options:
+        - Urgent
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Minimal, numbered steps that reliably reproduce the bug.
+      placeholder: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happens?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Anything relevant: version/commit, OS, browser, runtime.
+      placeholder: |
+        Version / commit:
+        OS:
+        Browser / runtime:
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / error output
+      description: Paste relevant logs or stack traces. **Do not paste secrets or PII.**
+      render: shell
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this bug to be considered fixed?
