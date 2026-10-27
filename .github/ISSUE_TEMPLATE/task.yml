@@ -1,0 +1,48 @@
+name: ✅ Task
+about: Non-feature work: refactoring, dependency updates, docs, tooling, chores.
+title: "task: "
+labels: [task]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: What needs to be done?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What problem or goal does it serve?
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Urgent
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Effort estimate
+      description: Rough planning estimate (split the issue if it's XL).
+      options:
+        - XS (under an hour)
+        - S (a few hours)
+        - M (1–2 days)
+        - L (about a week)
+        - XL (more than a week — should be split)
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know the task is done?
+    validations:
+      required: true

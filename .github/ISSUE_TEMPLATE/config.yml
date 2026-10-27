@@ -1,0 +1,7 @@
+# Blank issues are disabled: every item must match a template (agile triage discipline).
+# Questions and open-ended discussions belong in Discussions, not the issue tracker.
+blank_issues: false
+contact_links:
+  - name: 💬 Q&A / design discussion
+    about: Questions, ideas, and open-ended discussions belong in Discussions.
+    url: https://github.com/glyad/repo-created-by-qwen3.8-27B/discussions
