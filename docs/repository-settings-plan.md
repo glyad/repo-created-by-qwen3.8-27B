@@ -31,6 +31,8 @@
 | 6 | Ruleset `baseline-gitflow` (3.2): Disabled dry-run → Active + status checks (§4 Phase 2) | ⬜ queued |
 | 7 | Verification suite (§5) + governance cadence (§6) | ⬜ queued |
 
+**Post-Step-2 event (10-27):** first setup sync — Issue #1 → PR #2 (`develop → main`, merge commit; ceremony bypass per setup rule). Issue closed; `develop` re-synced; templates + `docs/` now active from the default branch.
+
 ---
 
 ## 1. Target state
